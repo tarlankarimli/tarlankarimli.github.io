@@ -1,0 +1,60 @@
+// countdown
+.countdown {
+    font-size: 10rem;
+    margin-top: 5rem;
+    color: $white;
+  }
+
+// questions form in addQuestions 
+.add-question {    
+    &-header {
+        font-size: 3rem;
+        color: $white;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+    }
+    label {
+        font-size: 2rem;
+        color: $white;
+    } 
+}
+
+// buttons 
+.btn {
+    font-size: 2rem;
+    color: $white;
+}
+
+// gameOver
+.game-over {
+    h2 {
+      font-size: 10rem;
+      color: $danger;
+      margin-bottom: 3rem;
+    }
+  }
+
+// levelList
+.level-list {
+    &-item {
+      font-size: 3rem;
+      color: $white;
+    }
+  }
+
+// questions
+.questions {
+    color: $white;
+    .question {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .answer {
+      font-size: 3rem;
+      & > :first-child {
+        font-size: 4rem;
+        color: $warning;
+      }
+    }
+}

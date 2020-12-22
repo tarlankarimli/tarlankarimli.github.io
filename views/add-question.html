@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add question</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/index.html"><li class="fa fa-home fa-3x"></li></a>
+        <div class="question-btns">
+            <a href="#" class="btn btn-info btn-easy">Easy</a>
+            <a href="#" class="btn btn-warning btn-medium">Medium</a>
+            <a href="#" class="btn btn-danger btn-hard">Hard</a>
+        </div>
+        <div class="add-question">
+            <h3 class="add-question-header"></h3>
+            <div class="form">
+                <label for="add-question">Type your question</label>
+                <textarea id="add-question" rows="4" placeholder="Which is not the programming language?"></textarea>
+                <label for="input-a">Answer: A</label>
+                <input type="text" id="input-a" placeholder="Java">
+                <label for="input-b">Answer: B</label>
+                <input type="text" id="input-b" placeholder="HTML">
+                <label for="input-c">Answer: C</label>
+                <input type="text" id="input-c" placeholder="C#">
+                <label for="input-d">Answer: D</label>
+                <input type="text" id="input-d" placeholder="Pyhton">
+            </div>
+            <label for="right-answer">Choose your right answer</label>
+            <select id="right-answer">
+                <option value="id-a">A</option>
+                <option value="id-b">B</option>
+                <option value="id-c">C</option>
+                <option value="id-d">D</option>
+            </select>
+            <button class="btn btn-success btn-add-question btn-block">Add question</button>
+        </div>
+    </div>
+
+    <script type="module" src="/js/questions/questions.js"></script>
+    <script type="module" src="/js/questions/questionDB.js"></script>
+</body>
+</html>

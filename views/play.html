@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's play</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <div class="play">
+        <a href="/index.html"><li class="fa fa-home fa-3x"></li></a>
+        <div class="main">
+            <div class="countdown">
+                <!-- <span>30</span> -->
+            </div>
+            <div class="questions">
+                <div class="question"></div>
+                <div class="answers">
+                    <div class="answers-left">
+                        <div class="answer" id="id-a">
+                            <span>A:</span>
+                            <span class="itemA"></span>
+                        </div>
+                        <div class="answer" id="id-c">
+                            <span>C:</span>
+                            <span class="itemC"></span>
+                        </div>
+                    </div>
+                    <div class="answers-right">
+                        <div class="answer" id="id-b">
+                            <span>B:</span>
+                            <span class="itemB" ></span>
+                        </div>
+                        <div class="answer" id="id-d">
+                            <span>D:</span>
+                            <span class="itemD"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level-list">
+            <!-- <div class="level-list-item selected">
+                <span class="item-id">
+                    12
+                </span>
+                <span class="item-content">
+                    ₼ 500 000
+                </span>
+            </div> -->
+        </div>
+        <div class="game-over">
+            <h2>GAME OVER</h2>
+            <button class="btn btn-success btn-game-over">Try again</button>
+        </div>
+    </div>
+
+    <!-- <script type="module" src="/js/achievement.js"></script>
+    <script type="module" src="/js/countdown.js"></script> -->
+    <script type="module" src="../js/play/play.js"></script>
+</body>
+</html>

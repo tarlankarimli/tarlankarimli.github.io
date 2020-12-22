@@ -1,0 +1,28 @@
+@import './local';
+@import './config';
+@import './view';
+@import './components';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+
+
+//         |--- components/
+//         |   |- _event-timing.scss
+//         |   |- _events.scss
+//         |   |- _form.scss
+//         |
+//         |--- config/
+//         |   |- _breakpoints.scss
+//         |   |- _colors.scss
+//         |   |- _common.scss
+//         |   |- _typography.scss
+//         |
+//         |--- local/
+//         |   |- _mixins.scss        
+//         |   |- _resets.scss
+//         |
+//         |-- _components.scss
+//         |-- _config.scss
+//         |-- _local.scss
+//         |
+//         |- main.scss

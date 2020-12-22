@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  border-radius: 4px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #003366;
+  width: 100vw;
+  position: relative;
+}
+
+.countdown {
+  font-size: 10rem;
+  margin-top: 5rem;
+  color: #fff;
+}
+
+.add-question-header {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.add-question label {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.btn {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.game-over h2 {
+  font-size: 10rem;
+  color: #d9534f;
+  margin-bottom: 3rem;
+}
+
+.level-list-item {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.questions {
+  color: #fff;
+}
+
+.questions .question {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.questions .answer {
+  font-size: 3rem;
+}
+
+.questions .answer > :first-child {
+  font-size: 4rem;
+  color: #FFC107;
+}
+
+.question-btns > a {
+  margin: 2rem 0;
+}
+
+.add-question {
+  width: 30%;
+  display: none;
+}
+
+.add-question label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.add-question input, .add-question textarea {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.add-question input {
+  height: 4rem;
+}
+
+.play {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url("../images/play-bg.png") no-repeat;
+  background-size: cover;
+}
+
+.play .main {
+  height: 100%;
+  width: 70%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  width: 25rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #0275d8;
+}
+
+.btn-primary:hover {
+  background: #0069D9;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-success {
+  background: #5cb85c;
+}
+
+.btn-success:hover {
+  background: #438843;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-warning {
+  background: #FFC107;
+}
+
+.btn-warning:hover {
+  background: #E0A800;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-info {
+  background: #5bc0de;
+}
+
+.btn-info:hover {
+  background: #138496;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-danger {
+  background: #d9534f;
+}
+
+.btn-danger:hover {
+  background: #C9302C;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-add-question {
+  border: none;
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+.fa-arrow-left, .fa-home {
+  color: #fff;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1;
+}
+
+.level-list {
+  height: 100%;
+  width: 38rem;
+  background: #003366;
+  border-left: 0.2rem solid #fff;
+}
+
+.level-list-item {
+  height: 4.8rem;
+  padding: 1rem 4rem;
+}
+
+.level-list-item .item-id {
+  display: inline-block;
+  width: 8rem;
+}
+
+.game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #003366c5;
+}
+
+.questions {
+  width: 100%;
+  height: 40rem;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 2rem;
+}
+
+.questions .question {
+  width: 100%;
+  background: #1060b1f8;
+  min-height: 12rem;
+  padding: 5rem;
+  -webkit-clip-path: polygon(0 50%, 5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
+          clip-path: polygon(0 50%, 5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
+}
+
+.questions .answers {
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.questions .answers .answer {
+  width: 50rem;
+  height: 11rem;
+  background: #1060b1d2;
+  margin: 1rem 0;
+  -webkit-clip-path: polygon(0 50%, 10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+          clip-path: polygon(0 50%, 10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4rem;
+  position: relative;
+}
+
+.questions .answers .answer:hover {
+  background: #003366;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.questions .answers .answer > :first-child {
+  position: absolute;
+  left: 3rem;
+}

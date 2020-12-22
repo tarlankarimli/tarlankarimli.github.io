@@ -1,0 +1,19 @@
+.question-btns > a {
+    margin: 2rem 0;
+}
+// form for adding question
+.add-question {
+    width: 30%;
+    display: none;
+    label {
+        display: block;
+        margin: 1rem 0
+    }
+    input, textarea {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    input {
+        height: 4rem;        
+    }
+}

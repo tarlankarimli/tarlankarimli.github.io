@@ -1,0 +1,44 @@
+.btn {
+  width: 25rem;
+  height: 6rem;
+  @include center;
+  margin: 0 1rem;
+  border: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-primary {
+   @include btn-color($primary, $primary-dark);
+  }
+  &-success {
+    @include btn-color($success, $success-dark)
+  }
+  &-warning {
+   @include btn-color($warning, $warning-dark);
+  }
+  &-info {
+   @include btn-color($info, $info-dark);
+  }
+  &-danger {
+   @include btn-color($danger, $danger-dark);
+  }
+  &-block {
+    width: 100%;
+  }
+}
+
+// Add questions buttons
+ .btn-add-question {
+   border: none;
+   height: 5rem;
+   margin: 1rem 0;
+ }
+.fa-arrow-left, .fa-home {
+  color: $white;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1;
+}

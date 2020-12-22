@@ -1,0 +1,19 @@
+@mixin center($display: flex, $justify-content: center, $align-items: center) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+  @mixin btn-color($color, $color-hover) {
+    background: $color;
+    &:hover {
+      background: $color-hover;
+      transition: 0.2s ease-in-out;
+    }
+  }
+  @mixin question-box {
+    clip-path: polygon(0 50%, 5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
+  }
+  @mixin answer-box {
+    clip-path: polygon(0 50%, 10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+  }
+  
